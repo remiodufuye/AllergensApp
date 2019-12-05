@@ -1,0 +1,10 @@
+
+<h1> Welcome to My Recipe App </h1> 
+
+
+<% @recipes.each do |recep| %>
+<%= link_to recep.name , recipe_path(recep) %><br>
+<% end %>
+<br><br>
+
+<%= link_to "Create New Recipe", new_recipe_path(@recipe) %>
